@@ -7,7 +7,11 @@
 		{
 			"Name": "Project000",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Blutility",
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
