@@ -23,4 +23,7 @@ public:
 	
 	UFUNCTION(BlueprintCallable)
 	static void GetFilesInDirectory(TArray<FString>& FoundFiles,FString Directory, FString FileExtension);
+
+	UFUNCTION(BlueprintCallable)
+	static bool SaveStringToFile(FString Content,FString Filename);
 };

@@ -13,3 +13,10 @@ void UFileFunctionLibrary::GetFilesInDirectory(TArray<FString>& FoundFiles, FStr
 	IFileManager& FileManager = IFileManager::Get();
 	FileManager.FindFiles(FoundFiles, *Directory, *FileExtension);
 }
+
+bool UFileFunctionLibrary::SaveStringToFile(FString Content, FString Filename)
+{
+	return FFileHelper::SaveStringToFile(Content, *Filename);
+}
+
+
